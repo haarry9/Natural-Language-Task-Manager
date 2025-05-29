@@ -49,7 +49,7 @@ export default function HomePage() {
             </div>
           </CardContent>
           <CardFooter className="pt-6">
-            <Link href="/tasks" asChild legacyBehavior={false}>
+            <Link href="/tasks" asChild>
               <Button className="w-full text-base py-3">Go to Task Manager</Button>
             </Link>
           </CardFooter>
