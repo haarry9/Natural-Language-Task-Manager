@@ -1,3 +1,4 @@
+
 'use client';
 
 import Link from 'next/link';
@@ -49,9 +50,9 @@ export default function HomePage() {
             </div>
           </CardContent>
           <CardFooter className="pt-6">
-            <Link href="/tasks" asChild>
-              <Button className="w-full text-base py-3">Go to Task Manager</Button>
-            </Link>
+            <Button asChild className="w-full text-base py-3">
+              <Link href="/tasks">Go to Task Manager</Link>
+            </Button>
           </CardFooter>
         </Card>
 
