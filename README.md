@@ -18,7 +18,7 @@ To run this project locally, you will need Node.js (version 18 or later) and a p
 
 1.  **Clone the repository:**
     ```bash
-    git clone https://github.com/haarry9/Natural-Language-Task-Manager.git
+    git clone https://github.com/haarry9/ClarityFlow.git
     cd Natural-Language-Task-Manager
     ```
 

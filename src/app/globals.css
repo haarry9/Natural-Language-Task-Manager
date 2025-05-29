@@ -8,8 +8,8 @@ body {
 
 @layer base {
   :root {
-    --background: 0 0% 100%; /* white #FFFFFF */
-    --foreground: 214 61% 25%; /* #193B68 */
+    --background: 207 90% 95.1%; /* #E3F2FD Light, desaturated blue */
+    --foreground: 214 61% 25%; /* #193B68 Dark blue for text */
 
     --card: 0 0% 100%; /* white for cards #FFFFFF */
     --card-foreground: 214 61% 25%; /* #193B68 */
@@ -17,24 +17,24 @@ body {
     --popover: 0 0% 100%; /* white #FFFFFF */
     --popover-foreground: 214 61% 25%; /* #193B68 */
 
-    --primary: 220 100% 54%; /* #1479FF */
-    --primary-foreground: 0 0% 98%; /* near white */
+    --primary: 207 82% 68%; /* #64B5F6 Soft blue */
+    --primary-foreground: 210 100% 10%; /* Dark blue for text on primary */
 
-    --secondary: 218 33% 93%; /* #193B68 at 10% opacity over white (#E8EBF0) */
+    --secondary: 207 80% 90%; /* Lighter variant of background/primary */
     --secondary-foreground: 214 61% 25%; /* #193B68 */
 
-    --muted: 214 30% 70%; /* Lighter shade of foreground */
-    --muted-foreground: 214 61% 25%; /* #193B68 */
+    --muted: 210 40% 96.1%; /* Light grey */
+    --muted-foreground: 210 30% 50%; /* Medium grey for less emphasis text */
 
-    --accent: 193 100% 54%; /* #14D2FF */
+    --accent: 220 100% 58%; /* #2979FF Brighter blue */
     --accent-foreground: 0 0% 98%; /* near white */
 
     --destructive: 0 72% 51%; /* standard red for destructive */
     --destructive-foreground: 0 0% 98%; /* near white */
 
-    --border: 218 100% 86%; /* #1479FF at 30% opacity over white (#B9D7FF) */
+    --border: 207 82% 85%; /* Lighter primary for borders */
     --input: 0 0% 100%; /* white for input backgrounds #FFFFFF */
-    --ring: 220 100% 54%; /* primary color for focus rings #1479FF */
+    --ring: 207 82% 68%; /* primary color for focus rings */
 
     --radius: 0.5rem;
 
@@ -44,38 +44,38 @@ body {
     --chart-4: 43 74% 66%;
     --chart-5: 27 87% 67%;
 
-    /* Sidebar variables remain, though not heavily used in this specific app layout */
-    --sidebar-background: 208 88% 92%; /* Slightly darker than main background */
-    --sidebar-foreground: 210 25% 25%;
+    /* Sidebar variables - kept for potential future use, aligned with new theme */
+    --sidebar-background: 207 85% 92%; /* Slightly darker than main background */
+    --sidebar-foreground: 214 61% 25%; 
     --sidebar-primary: 207 82% 68%;
     --sidebar-primary-foreground: 210 100% 10%;
     --sidebar-accent: 220 100% 58%;
     --sidebar-accent-foreground: 0 0% 98%;
-    --sidebar-border: 207 50% 75%;
+    --sidebar-border: 207 82% 80%;
     --sidebar-ring: 207 82% 68%;
   }
 
   .dark {
-    /* Keeping dark theme mostly as default, can be customized later if needed */
+    /* Dark theme colors can be adjusted to complement the new light theme if needed */
     --background: 210 10% 10%;
-    --foreground: 210 20% 90%;
+    --foreground: 207 80% 90%; /* Light blue text on dark background */
 
     --card: 210 10% 12%;
-    --card-foreground: 210 20% 90%;
+    --card-foreground: 207 80% 90%;
 
     --popover: 210 10% 10%;
-    --popover-foreground: 210 20% 90%;
+    --popover-foreground: 207 80% 90%;
 
-    --primary: 207 75% 60%; /* Adjusted blue for dark mode */
+    --primary: 207 75% 60%; /* Adjusted soft blue for dark mode */
     --primary-foreground: 210 100% 10%;
 
     --secondary: 210 10% 20%;
-    --secondary-foreground: 210 20% 90%;
+    --secondary-foreground: 207 80% 90%;
 
     --muted: 210 10% 25%;
-    --muted-foreground: 210 20% 65%;
+    --muted-foreground: 207 80% 65%; /* Lighter muted text for dark */
 
-    --accent: 220 90% 55%; /* Adjusted accent for dark mode */
+    --accent: 220 90% 65%; /* Adjusted brighter blue for dark mode */
     --accent-foreground: 0 0% 98%;
 
     --destructive: 0 60% 45%;
@@ -92,10 +92,10 @@ body {
     --chart-5: 340 75% 55%;
 
     --sidebar-background: 210 10% 12%;
-    --sidebar-foreground: 210 20% 90%;
+    --sidebar-foreground: 207 80% 90%;
     --sidebar-primary: 207 75% 60%;
     --sidebar-primary-foreground: 210 100% 10%;
-    --sidebar-accent: 220 90% 55%;
+    --sidebar-accent: 220 90% 65%;
     --sidebar-accent-foreground: 0 0% 98%;
     --sidebar-border: 210 10% 25%;
     --sidebar-ring: 207 75% 60%;
@@ -108,13 +108,13 @@ body {
   }
   body {
     @apply bg-background text-foreground;
-    /* Apply Geist font variables */
     font-family: var(--font-geist-sans);
   }
   h1, h2, h3, h4, h5, h6 {
     font-family: var(--font-geist-sans);
   }
   code, kbd, samp, pre {
-    font-family: var(--font-geist-mono);
+    /* Ensure GeistMono is available if used, or fallback to generic mono */
+    font-family: var(--font-geist-mono), monospace; 
   }
 }
