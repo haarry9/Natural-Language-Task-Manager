@@ -8,33 +8,33 @@ body {
 
 @layer base {
   :root {
-    --background: 208 88% 94%; /* light desaturated blue #E3F2FD */
-    --foreground: 210 25% 25%; /* darker blue-gray for text */
+    --background: 0 0% 100%; /* white #FFFFFF */
+    --foreground: 214 61% 25%; /* #193B68 */
 
-    --card: 0 0% 100%; /* white for cards */
-    --card-foreground: 210 25% 25%; /* same as main text */
+    --card: 0 0% 100%; /* white for cards #FFFFFF */
+    --card-foreground: 214 61% 25%; /* #193B68 */
 
-    --popover: 0 0% 100%;
-    --popover-foreground: 210 25% 25%;
+    --popover: 0 0% 100%; /* white #FFFFFF */
+    --popover-foreground: 214 61% 25%; /* #193B68 */
 
-    --primary: 207 82% 68%; /* soft blue #64B5F6 */
-    --primary-foreground: 210 100% 10%; /* very dark blue for text on primary */
+    --primary: 220 100% 54%; /* #1479FF */
+    --primary-foreground: 0 0% 98%; /* near white */
 
-    --secondary: 210 25% 88%; /* light grayish blue for secondary elements */
-    --secondary-foreground: 210 25% 25%; /* text for secondary */
+    --secondary: 218 33% 93%; /* #193B68 at 10% opacity over white (#E8EBF0) */
+    --secondary-foreground: 214 61% 25%; /* #193B68 */
 
-    --muted: 210 25% 92%; /* lighter grayish blue for muted text/elements */
-    --muted-foreground: 210 25% 45%; /* text for muted */
+    --muted: 214 30% 70%; /* Lighter shade of foreground */
+    --muted-foreground: 214 61% 25%; /* #193B68 */
 
-    --accent: 220 100% 58%; /* brighter blue #2979FF */
-    --accent-foreground: 0 0% 98%; /* white/very light text for accent */
+    --accent: 193 100% 54%; /* #14D2FF */
+    --accent-foreground: 0 0% 98%; /* near white */
 
     --destructive: 0 72% 51%; /* standard red for destructive */
-    --destructive-foreground: 0 0% 98%;
+    --destructive-foreground: 0 0% 98%; /* near white */
 
-    --border: 207 50% 80%; /* lighter blue for borders */
-    --input: 0 0% 100%; /* white for input backgrounds, consistent with card */
-    --ring: 207 82% 68%; /* primary color for focus rings */
+    --border: 218 100% 86%; /* #1479FF at 30% opacity over white (#B9D7FF) */
+    --input: 0 0% 100%; /* white for input backgrounds #FFFFFF */
+    --ring: 220 100% 54%; /* primary color for focus rings #1479FF */
 
     --radius: 0.5rem;
 
