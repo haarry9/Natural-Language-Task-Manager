@@ -63,7 +63,7 @@ export default function HomePage() {
               <CardTitle className="text-2xl font-semibold">AI Meeting Minutes to Tasks</CardTitle>
             </div>
             <CardDescription className="text-base min-h-[60px]">
-              Convert your meeting notes or transcripts into actionable tasks automatically. (Coming Soon!)
+              Convert your meeting notes or transcripts into actionable tasks automatically.
             </CardDescription>
           </CardHeader>
           <CardContent className="flex-grow">
@@ -79,8 +79,8 @@ export default function HomePage() {
             </div>
           </CardContent>
           <CardFooter className="pt-6">
-            <Button className="w-full text-base py-3" disabled>
-              Explore Meeting AI (Soon)
+            <Button asChild className="w-full text-base py-3">
+              <Link href="/meetings">Go to Meeting Parser</Link>
             </Button>
           </CardFooter>
         </Card>
